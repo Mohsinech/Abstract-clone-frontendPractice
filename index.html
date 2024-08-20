@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/icon" href="./src/images/title_logo.svg" />
+    <title>Abstract — Frontend Practice</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- 
+    This is just a popup contains some infos 
+    you can delete after reviewing this project
+    -->
+    <div class="popup_info">
+      <div class="exit_btn" id="exit">
+        <img class="exit_pp" src="./src/images/x.svg" />
+      </div>
+      <h2 class="gr">
+        Hello <span class="user">//</span>! This is a clone of the
+        <span
+          ><a href="https://help.abstract.com/hc/en-us" target="_blank" class="off_site"
+            >Abstract.com</a
+          ></span
+        >
+        site and coded by
+        <span
+          ><a
+            class="ig"
+            href="https://www.instagram.com/muhsench/"
+            target="_blank"
+            >@muhsench.</a
+          ></span
+        >
+      </h2>
+    </div>
+
+    <!-- Main header -->
+    <header class="header desktop_header">
+      <div class="wrapper">
+        <a href="index.html" class="logo">
+          <img
+            class="abstract_logo"
+            src="./src/images/logo.svg"
+            alt="Abstract logo"
+          />
+        </a>
+        <div class="divider"></div>
+        <a href="#" class="page_name">Help Center</a>
+      </div>
+      <div class="cta_btns">
+        <button class="btn submit_btn">Submit a request</button>
+        <button class="btn sign_in_btn">Sign in</button>
+      </div>
+    </header>
+
+    <!-- Mobile header -->
+    <header class="mobile_navbar_header">
+      <div class="mobile_wrapper">
+        <a href="index.html" class="mobile_logo">
+          <img
+            class="abstract_logo_mb"
+            src="./src/images/logo.svg"
+            alt="Abstract logo"
+          />
+        </a>
+        <div class="divider_mb"></div>
+        <a href="#" class="page_name_mobile">Help Center</a>
+      </div>
+      <nav class="mobile_navbar">
+        <div class="search_col">
+          <img class="search" id="search" src="./src/images/search.svg" />
+          <div class="search_input" id="s_in">
+            <input class="search_in" type="text" placeholder="search" />
+            <img class="exit" id="exit_input" src="./src/images/x.svg" />
+          </div>
+        </div>
+        <div class="navbar_col">
+          <div class="toggle_btn" id="toggle">
+            <span id="id_1"></span>
+            <span id="id_2"></span>
+            <span id="id_3"></span>
+          </div>
+          <div class="overlay_nav_menu">
+            <a class="mobile_btn" href="#">Submit a request</a>
+            <div class="mobile_div"></div>
+            <a href="#" class="sign_in">Sign in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero_section">
+      <h1 class="hero_title">How can we help?</h1>
+      <div class="input">
+        <input type="text" placeholder="Search" />
+        <svg
+          class="input_arrow"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+              }
+            </style>
+          </defs>
+          <title />
+          <g data-name="Layer 2" id="Layer_2">
+            <path
+              d="M13,26a1,1,0,0,1-.71-.29l-9-9a1,1,0,0,1,0-1.42l9-9a1,1,0,1,1,1.42,1.42L5.41,16l8.3,8.29a1,1,0,0,1,0,1.42A1,1,0,0,1,13,26Z"
+            />
+            <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+          </g>
+          <g id="frame"><rect class="cls-1" height="32" width="32" /></g>
+        </svg>
+      </div>
+    </section>
+    
+    <!-- Services -->
+    <section class="services_section">
+      <div class="service_items">
+        <div class="service">
+          <img class="icon" src="./src/images/icon-versions.png" />
+          <div class="service_content">
+            <h1 class="service_label">Using Abstract</h1>
+            <p class="service_info">
+              Abstract lets you manage, version, and document your designs in
+              one place.
+            </p>
+            <div class="cta_btn">
+              <span class="learn_btn">Learn More</span>
+              <img class="arrow" src="./src/images/arrow.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <img class="icon" src="./src/images/icon-account.png" />
+          <div class="service_content">
+            <h1 class="service_label">Manage your account</h1>
+            <p class="service_info">
+              Configure your account settings, such as your email, profile
+              details, and password.
+            </p>
+            <div class="cta_btn">
+              <span class="learn_btn">Learn More</span>
+              <img class="arrow" src="./src/images/arrow.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <img class="icon" src="./src/images/icon-organizations.png" />
+          <div class="service_content">
+            <h1 class="service_label">
+              Manage organizations, teams, and projects
+            </h1>
+            <p class="service_info">
+              Use Abstract organizations, teams, and projects to organize your
+              people and your work.
+            </p>
+            <div class="cta_btn">
+              <span class="learn_btn">Learn More</span>
+              <img class="arrow" src="./src/images/arrow.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <img class="icon" src="./src/images/icon-billing.png" />
+          <div class="service_content">
+            <h1 class="service_label">Manage billing</h1>
+            <p class="service_info">
+              Abstract lets you manage, version, and document your designs in
+              one place.
+            </p>
+            <div class="cta_btn">
+              <span class="learn_btn">Learn More</span>
+              <img class="arrow" src="./src/images/arrow.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <img class="icon" src="./src/images/icon-authenticate.png" />
+          <div class="service_content">
+            <h1 class="service_label">Authenticate to Abstract</h1>
+            <p class="service_info">
+              Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+            </p>
+            <div class="cta_btn">
+              <span class="learn_btn">Learn More</span>
+              <img class="arrow" src="./src/images/arrow.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <img class="icon" src="./src/images/icon-comment.png" />
+          <div class="service_content">
+            <h1 class="service_label">Abstract supportt</h1>
+            <p class="service_info">Get in touch with a human.</p>
+            <div class="cta_btn">
+              <span class="learn_btn">Learn More</span>
+              <img class="arrow" src="./src/images/arrow.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer_wrapper">
+        <ul class="pages">
+          <h2 class="page_name">Abstract</h2>
+          <li class="page_item"><a href="#">Start Trial</a></li>
+          <li class="page_item"><a href="#">Pricing</a></li>
+          <li class="page_item"><a href="#">Download</a></li>
+        </ul>
+        <ul class="pages">
+          <h2 class="page_name">Ressources</h2>
+          <li class="page_item"><a href="#">Blog</a></li>
+          <li class="page_item"><a href="#">Release Notes</a></li>
+          <li class="page_item"><a href="#">Status</a></li>
+        </ul>
+        <ul class="pages">
+          <h2 class="page_name">Community</h2>
+          <li class="page_item"><a href="#">Twitter</a></li>
+          <li class="page_item"><a href="#">Linkedin</a></li>
+          <li class="page_item"><a href="#">Facebook</a></li>
+          <li class="page_item"><a href="#">Dribble</a></li>
+          <li class="page_item"><a href="#">Podcast</a></li>
+        </ul>
+        <div class="contact_details">
+          <ul class="pages">
+            <h2 class="page_name">Company</h2>
+            <li class="page_item"><a href="#"></a>About Us</li>
+            <li class="page_item"><a href="#"></a>Careers</li>
+            <li class="page_item"><a href="#"></a>Legal</li>
+          </ul>
+          <ul class="pages">
+            <h2 class="page_name">Contact Us</h2>
+            <li class="page_item"><a href="#"></a>info@abstract.com</li>
+          </ul>
+        </div>
+        <div class="copyright_details">
+          <img class="ms_logo" src="./src/images/title_logo.svg" />
+          <p class="copyright">&copy; Copyright 2024</p>
+          <p class="copyright">Abstract Studio Design, Inc</p>
+          <p class="copyright">All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
